@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Assignment 1</title>
+    <style>
+        section{
+          max-width: 1140px;  
+          margin: auto;
+          box-sizing: content-box;
+          background-color: antiquewhite;
+          padding: 30px;
+          border-radius: 10px;
+        }
+        .container-element{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:50px;
+
+        }
+        section h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 0px;
+        }
+        .left-image{
+            border: 10px solid black;
+        }
+        .right-image{
+            width:650px;
+            border: 10px solid blue;
+
+        
+        }
+        @media screen and (max-width:576px) {
+            .container-element{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container-element">
+            <div class="left">
+            <h1>Why Lionel Messi's Inter Miami Will Play at the FIFA Club World Cup 2025</h1>
+            <img class="left-image" src="./left-image.jpg" alt="">
+        </div>
+        <div class="right">
+            <img class="right-image" src="./right-image.png" alt="">
+        <p>In an expanded format featuring 32 teams from around the world, FIFA awarded 12 spots to Europe (UEFA), six to South America (CONEMBOL), four to North America and the Caribbean (Concacaf), Asia (AFC) and Africa (CAF) and one to Oceania (OFC). However, given that the tournament is being held Stateside, Concacaf were given an extra spot as hosts. </p></div>
+       </div>
+    </section>
+
+</body>
+</html>
